@@ -1,0 +1,924 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.94ea23d50a50fcf826df.css" id="gatsby-global-css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden]{display:none}:root{--maxWidth-none:"none";--maxWidth-xs:20rem;--maxWidth-sm:24rem;--maxWidth-md:28rem;--maxWidth-lg:32rem;--maxWidth-xl:36rem;--maxWidth-2xl:42rem;--maxWidth-3xl:48rem;--maxWidth-4xl:56rem;--maxWidth-full:"100%";--maxWidth-wrapper:var(--maxWidth-2xl);--spacing-px:"1px";--spacing-0:0;--spacing-1:0.25rem;--spacing-2:0.5rem;--spacing-3:0.75rem;--spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-8:2rem;--spacing-10:2.5rem;--spacing-12:3rem;--spacing-16:4rem;--spacing-20:5rem;--spacing-24:6rem;--spacing-32:8rem;--fontFamily-sans:Montserrat,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--fontFamily-serif:"Merriweather","Georgia",Cambria,"Times New Roman",Times,serif;--font-body:var(--fontFamily-serif);--font-heading:var(--fontFamily-sans);--fontWeight-normal:400;--fontWeight-medium:500;--fontWeight-semibold:600;--fontWeight-bold:700;--fontWeight-extrabold:800;--fontWeight-black:900;--fontSize-root:16px;--lineHeight-none:1;--lineHeight-tight:1.1;--lineHeight-normal:1.5;--lineHeight-relaxed:1.625;--fontSize-0:0.833rem;--fontSize-1:1rem;--fontSize-2:1.2rem;--fontSize-3:1.44rem;--fontSize-4:1.728rem;--fontSize-5:2.074rem;--fontSize-6:2.488rem;--fontSize-7:2.986rem;--color-primary:#005b99;--color-text:#2e353f;--color-text-light:#4f5969;--color-heading:#1a202c;--color-heading-black:#000;--color-accent:#d1dce5}*,:after,:before{box-sizing:border-box}html{line-height:var(--lineHeight-normal);font-size:var(--fontSize-root);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{font-family:var(--font-body);font-size:var(--fontSize-1);color:var(--color-text)}footer{padding:var(--spacing-6) var(--spacing-0)}hr{background:var(--color-accent);height:1px;border:0}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);margin-top:var(--spacing-12);margin-bottom:var(--spacing-6);line-height:var(--lineHeight-tight);letter-spacing:-.025em}h2,h3,h4,h5,h6{font-weight:var(--fontWeight-bold);color:var(--color-heading)}h1{font-weight:var(--fontWeight-black);font-size:var(--fontSize-6);color:var(--color-heading-black)}h2{font-size:var(--fontSize-5)}h3{font-size:var(--fontSize-4)}h4{font-size:var(--fontSize-3)}h5{font-size:var(--fontSize-2)}h6{font-size:var(--fontSize-1)}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{color:inherit;text-decoration:none}p{line-height:var(--lineHeight-relaxed);--baseline-multiplier:0.179;--x-height-multiplier:0.35;margin:var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0)}ol,p,ul{padding:var(--spacing-0)}ol,ul{margin-left:var(--spacing-0);margin-right:var(--spacing-0);margin-bottom:var(--spacing-8);list-style-position:outside;list-style-image:none}ol li,ul li{padding-left:var(--spacing-0)}li>p,ol li,ul li{margin-bottom:calc(var(--spacing-8)/2)}li :last-child{margin-bottom:var(--spacing-0)}li>ul{margin-left:var(--spacing-8);margin-top:calc(var(--spacing-8)/2)}blockquote{color:var(--color-text-light);margin-left:calc(var(--spacing-6)*-1);margin-right:var(--spacing-8);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);border-left:var(--spacing-1) solid var(--color-primary);font-size:var(--fontSize-2);font-style:italic;margin-bottom:var(--spacing-8)}blockquote>:last-child{margin-bottom:var(--spacing-0)}blockquote>ol,blockquote>ul{list-style-position:inside}table{width:100%;margin-bottom:var(--spacing-8);border-collapse:collapse;border-spacing:.25rem}table thead tr th{border-bottom:1px solid var(--color-accent)}a{color:var(--color-primary)}a:focus,a:hover{text-decoration:none}.global-wrapper{margin:var(--spacing-0) auto;max-width:var(--maxWidth-wrapper);padding:var(--spacing-10) var(--spacing-5)}.global-wrapper[data-is-root-path=true] .bio{margin-bottom:var(--spacing-20)}.global-header{margin-bottom:var(--spacing-12)}.main-heading{font-size:var(--fontSize-7);margin:0}.post-list-item{margin-bottom:var(--spacing-8);margin-top:var(--spacing-8)}.post-list-item p{margin-bottom:var(--spacing-0)}.post-list-item h2{font-size:var(--fontSize-4);color:var(--color-primary);margin-bottom:var(--spacing-2);margin-top:var(--spacing-0)}.post-list-item header{margin-bottom:var(--spacing-4)}.header-link-home{font-weight:var(--fontWeight-bold);font-family:var(--font-heading);text-decoration:none;font-size:var(--fontSize-2)}.bio{display:flex;margin-bottom:var(--spacing-16)}.bio-avatar,.bio p{margin-bottom:var(--spacing-0)}.bio-avatar{margin-right:var(--spacing-4);min-width:50px;border-radius:100%}.blog-post header h1{margin:var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0)}.blog-post header p{font-size:var(--fontSize-2);font-family:var(--font-heading)}.blog-post-nav ul{margin:var(--spacing-0)}.gatsby-highlight{margin-bottom:var(--spacing-8)}@media (max-width:42rem){blockquote{padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);margin-left:var(--spacing-0)}ol,ul{list-style-position:inside}}.big-image{height:70vh;width:100vw;position:relative;background-size:cover;background-position:40% 40%;background-image:url(/static/hero-photo-655a7eb3cbf5adbff6b93172d1d84987.jpg)}.overlay{position:absolute;height:100%;width:100%;top:0;left:0;background:rgba(0,0,0,.5);color:#fff;display:flex;align-items:center;justify-content:center;flex-direction:column}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}pre[class*=language-].line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}pre[class*=language-].line-numbers>code{position:relative;white-space:inherit}.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:0;font-size:100%;left:-3.8em;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-ms-user-select:none;user-select:none}.line-numbers-rows>span{display:block;counter-increment:linenumber}.line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}</style><meta name="generator" content="Gatsby 2.31.1"/><link id="gist-embed-b3b573358bfc66d89e1e95dbf8319c09" as="style" href="https://github.githubassets.com/assets/gist-embed-b3b573358bfc66d89e1e95dbf8319c09.css" rel="preload"/><noscript><link href="https://github.githubassets.com/assets/gist-embed-b3b573358bfc66d89e1e95dbf8319c09.css" rel="stylesheet"/></noscript><script>
+                  var link = document.querySelector("#gist-embed-b3b573358bfc66d89e1e95dbf8319c09");
+                  link.addEventListener("load", function() {
+                    this.rel = "stylesheet"
+                  });
+                </script><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=39506c0dcc2a070de3e033f1ed2e4a3e" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=39506c0dcc2a070de3e033f1ed2e4a3e"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=39506c0dcc2a070de3e033f1ed2e4a3e"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=39506c0dcc2a070de3e033f1ed2e4a3e"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=39506c0dcc2a070de3e033f1ed2e4a3e"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=39506c0dcc2a070de3e033f1ed2e4a3e"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=39506c0dcc2a070de3e033f1ed2e4a3e"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=39506c0dcc2a070de3e033f1ed2e4a3e"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=39506c0dcc2a070de3e033f1ed2e4a3e"/><title data-react-helmet="true">Implementing Testing and CI Workflow in Blink | Blog of Badal Sarkar</title><meta data-react-helmet="true" name="description" content="As part of lab
+8 of
+OSD600, I have implemented automated testing using JUnit 5
+and continuous integration using Github Action in
+Blink. This blog post is about…"/><meta data-react-helmet="true" property="og:title" content="Implementing Testing and CI Workflow in Blink"/><meta data-react-helmet="true" property="og:description" content="As part of lab
+8 of
+OSD600, I have implemented automated testing using JUnit 5
+and continuous integration using Github Action in
+Blink. This blog post is about…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="badalsarkar86"/><meta data-react-helmet="true" name="twitter:title" content="Implementing Testing and CI Workflow in Blink"/><meta data-react-helmet="true" name="twitter:description" content="As part of lab
+8 of
+OSD600, I have implemented automated testing using JUnit 5
+and continuous integration using Github Action in
+Blink. This blog post is about…"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-6b6ac75080b13940e6a1.js"/><link as="script" rel="preload" href="/93241701166c3169d92c9fdd395837837cace836-d57e403f6b3df0c7cfb5.js"/><link as="script" rel="preload" href="/1943edf48358ec375759a10206b57d36c98a5e6d-d3d98b705e8f48692064.js"/><link as="script" rel="preload" href="/app-d9cef9e0091e50fa41f4.js"/><link as="script" rel="preload" href="/framework-de237a875aa45b276a9d.js"/><link as="script" rel="preload" href="/styles-55e82d6ff5158c00b714.js"/><link as="script" rel="preload" href="/webpack-runtime-9809d5255bc490811957.js"/><link as="fetch" rel="preload" href="/page-data/2020/testing-ci-workflow/2020-11-27-testing-and-ci-workflow-blink/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/916993862.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><header class="global-header"><a class="header-link-home" href="/">Blog of Badal Sarkar</a></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">Implementing Testing and CI Workflow in Blink</h1><p>November 28, 2020</p></header><section itemProp="articleBody"><p>As part of <a href="https://github.com/Seneca-CDOT/topics-in-open-source-2020/wiki/lab-8">lab
+8</a> of
+OSD600, I have implemented automated testing using JUnit 5
+and continuous integration using Github Action in
+<a href="https://github.com/badalsarkar/Blink">Blink</a>. This blog post is about
+how I implemented these tools in my project.</p>
+<h3>Automated testing</h3>
+<p>Blink was written in Java using Maven. There are many popular testing frameworks
+for Java. <a href="https://junit.org/junit5/">JUnit</a> is among the most widely used.
+JUnit has the 5th major version of the framework, Junit 5 . I have never worked
+with JUnit so I decided to try using it this time. Setting up Junit 5 with Maven
+is super simple. I added the following dependencies in my <code class="language-text">pom.xml</code></p>
+<div class="gatsby-highlight" data-language="xml"><pre style="counter-reset: linenumber NaN" class="language-xml line-numbers"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependencies</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>org.junit.jupiter<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>junit-jupiter-api<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>5.4.2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>scope</span><span class="token punctuation">></span></span>test<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>scope</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>org.junit.jupiter<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>junit-jupiter-engine<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>5.4.2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>scope</span><span class="token punctuation">></span></span>test<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>scope</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependencies</span><span class="token punctuation">></span></span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>To run the JUnit tests with Maven, I added the Maven <a href="https://maven.apache.org/surefire/maven-surefire-plugin/">Surefire
+plugin</a> in my
+pom.xml like below-</p>
+<div class="gatsby-highlight" data-language="xml"><pre style="counter-reset: linenumber NaN" class="language-xml line-numbers"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>build</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugins</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugin</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>maven-surefire-plugin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>2.22.1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>configuration</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>argLine</span><span class="token punctuation">></span></span>${surefireArgLine}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>argLine</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>configuration</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>plugin</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>plugins</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>build</span><span class="token punctuation">></span></span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Maven surefire plugin runs the unit tests with the command <code class="language-text">mvn test</code>. It also
+generates test reports. The tests need to reside in /src/test/ folder and the
+name of the test file should be one of the following-</p>
+<ul>
+<li>Test*.java</li>
+<li>*Test.java</li>
+<li>*Tests.java</li>
+<li>*TestCase.java</li>
+</ul>
+<p>The element <code class="language-text">argLine</code> is for replacement of properties set on the command line.
+In my case, this is used for
+<a href="https://www.jacoco.org/jacoco/trunk/index.html">Jacoco</a>, a code coverage
+analysis tool. I am going to set it up next.</p>
+<p>Jacoco is a free code coverage tool for Java. It generates a report showing how
+many lines of code has been covered by tests. To set up Jacoco with Maven I
+added the following dependency which I found in
+<a href="https://www.petrikainulainen.net/programming/maven/creating-code-coverage-reports-for-unit-and-integration-tests-with-the-jacoco-maven-plugin/">this</a>
+blog-</p>
+<div class="gatsby-highlight" data-language="xml"><pre style="counter-reset: linenumber NaN" class="language-xml line-numbers"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugin</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>org.jacoco<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>jacoco-maven-plugin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>0.8.4 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>executions</span><span class="token punctuation">></span></span>
+    <span class="token comment">&lt;!-- Prepares the property pointing to the JaCoCo runtime agent which 
+    is passed as VM argument when Maven the Surefire plugin is executed. --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>execution</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>id</span><span class="token punctuation">></span></span>pre-unit-test<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>id</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>goals</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>goal</span><span class="token punctuation">></span></span>prepare-agent<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>goal</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>goals</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>configuration</span><span class="token punctuation">></span></span>
+        <span class="token comment">&lt;!-- Sets the path to the file which contains the execution data. --></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>destFile</span><span class="token punctuation">></span></span>${project.build.directory}/coverage-reports/jacoco-ut.exec<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>destFile</span><span class="token punctuation">></span></span>
+        <span class="token comment">&lt;!-- Sets the name of the property containing the settings for JaCoCo 
+              runtime agent. --></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>propertyName</span><span class="token punctuation">></span></span>surefireArgLine<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>propertyName</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>configuration</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>execution</span><span class="token punctuation">></span></span>
+      <span class="token comment">&lt;!-- Ensures that the code coverage report for unit tests is created 
+      after unit tests have been run. --></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>execution</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>id</span><span class="token punctuation">></span></span>post-unit-test<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>id</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>phase</span><span class="token punctuation">></span></span>test<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>phase</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>goals</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>goal</span><span class="token punctuation">></span></span>report<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>goal</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>goals</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>configuration</span><span class="token punctuation">></span></span>
+          <span class="token comment">&lt;!-- Sets the path to the file which contains the execution data. --></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dataFile</span><span class="token punctuation">></span></span>${project.build.directory}/coverage-reports/jacoco-ut.exec<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dataFile</span><span class="token punctuation">></span></span>
+              <span class="token comment">&lt;!-- Sets the output directory for the code coverage report. --></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>outputDirectory</span><span class="token punctuation">></span></span>${project.reporting.outputDirectory}/jacoco-ut<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>outputDirectory</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>configuration</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>execution</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>executions</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>plugin</span><span class="token punctuation">></span></span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>In the above configuration there are two executions. Lets see what those means.</p>
+<p>First execution [line 8-20]
+sets up Jacoco
+<a href="https://www.eclemma.org/jacoco/trunk/doc/prepare-agent-mojo.html">prepare-agent</a>
+goal. In Maven a goal is a way to define some actions. The <code class="language-text">prepare-agent</code> goal
+creates a property which point to the Jacoco runtime agent. This agent is
+responsible for interacting with application under test and create execution
+data needed to generate the final report. We are defining the output folder for
+execution data at line 15 and the property name is defined at line 18. Note that
+this is the property I set in my Surefire configuration at line 7. This is how
+Jacoco interact with Surefire which runs our tests.</p>
+<p>Second execution [line 23-35] defines the <code class="language-text">report</code> goal. This goal generates the
+actual test coverage report. We are specifying that this goal will run at the
+<code class="language-text">test</code> phase at line 25. Read more about Maven build lifecycle <a href="https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html">here</a>.
+Next I am specifying the directory to find the test execution data at <code class="language-text">dataFile</code>
+element and the directory to save the final report at <code class="language-text">outputDirectory</code> element.</p>
+<p>That’s all for setting automated tests. When I run <code class="language-text">mvn test</code>, all my tests will
+run and I will get a test coverage report in the specified directory. I will
+show you below how this looks like.</p>
+<h4>Writing test cases</h4>
+<p>I have a function that extracts all URLs starting with HTTP/HTTPS from some
+texts. The function looks like below-</p>
+<div class="gatsby-highlight" data-language="java"><pre style="counter-reset: linenumber NaN" class="language-java line-numbers"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">></span></span> <span class="token function">extractUrlFromText</span><span class="token punctuation">(</span><span class="token class-name">String</span> text<span class="token punctuation">,</span> <span class="token class-name">Pattern</span> pattern<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">></span></span> url <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">argsAreInvalid</span><span class="token punctuation">(</span>text<span class="token punctuation">,</span> pattern<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> url<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">int</span> startPos <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> endPos <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token class-name">Matcher</span> matcher <span class="token operator">=</span> pattern<span class="token punctuation">.</span><span class="token function">matcher</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>matcher<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      startPos <span class="token operator">=</span> matcher<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      endPos <span class="token operator">=</span> matcher<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      url<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>text<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>startPos<span class="token punctuation">,</span> endPos<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> url<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>I have written several test cases for this function. One of them is following-</p>
+<div class="gatsby-highlight" data-language="java"><pre style="counter-reset: linenumber NaN" class="language-java line-numbers"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestExtractor</span> <span class="token punctuation">{</span>
+
+  <span class="token annotation punctuation">@Test</span>
+  <span class="token annotation punctuation">@DisplayName</span><span class="token punctuation">(</span><span class="token string">"Text contains two URLs, Extractor returns List of two URLs"</span><span class="token punctuation">)</span>
+  <span class="token keyword">void</span> <span class="token function">extractTwoUrls</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">String</span> text <span class="token operator">=</span> <span class="token string">"http://github.com https://github.com/badalsarkar/Blink"</span><span class="token punctuation">;</span>
+    <span class="token class-name">Pattern</span> pattern <span class="token operator">=</span>
+        <span class="token class-name">Pattern</span><span class="token punctuation">.</span><span class="token function">compile</span><span class="token punctuation">(</span><span class="token string">"(http|https):\\/\\/[-a-zA-Z0-9+&amp;@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&amp;@#/%=~_|]"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">></span></span> actualResult <span class="token operator">=</span> <span class="token class-name">Extractor</span><span class="token punctuation">.</span><span class="token function">extractUrlFromText</span><span class="token punctuation">(</span>text<span class="token punctuation">,</span> pattern<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">></span></span> expectedResult <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    expectedResult<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"http://github.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    expectedResult<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"https://github.com/badalsarkar/Blink"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token class-name">Assertions</span><span class="token punctuation">.</span><span class="token function">assertEquals</span><span class="token punctuation">(</span>expectedResult<span class="token punctuation">,</span> actualResult<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>I have named my test class as <code class="language-text">Test+[actual class name]</code>. So, this class will be
+picked up by Surefire plugin. Next I have annotated the method with <code class="language-text">@Test</code>.
+This annotation marks a method as a test. The annotation <code class="language-text">@DisplayName</code> is used
+to provide a readable name to the test. In the test report this test will show
+as the <code class="language-text">DisplayName</code>. If this is not specified, the method name will be used in
+the report. However, Surefire plugin is not picking up this annotation. I have
+not debugged it yet why. This is something I will look at later. Next I call the
+method under test at line 10. I am defining <code class="language-text">expectedResult</code> to match the
+<code class="language-text">actualResult</code>. Finally I am matching the expected and actual result at line 16.
+This is how test cases are written in Junit 5. You can see all the test cases
+<a href="https://github.com/badalsarkar/Blink/tree/master/src/test/java/com/badalsarkar/blink/test">here</a>.</p>
+<p>With several test cases written, I ran the command <code class="language-text">mvn test</code>. It ran all my
+tests and got the following in my console-</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f01a3d3d5bc16d4a1dc91d7bb3c3cffb/0d40b/testREsult.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 12.025316455696203%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsSAAALEgHS3X78AAAAa0lEQVQI12WLWQ6CMAAFuf/hBLGU0I26lW6cYWjQDxM/Jpm8pZP2gr5PzItAzhJjFEorhLjRDz3eO6wzJ96vhPDCOYvWS8ts8083jld0+3aP58oW3+QSyXmjlPT1SEqBWjP7Xv6ov942J80Pg/yR/amlus4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Blink test result"
+        title="Blink test result"
+        src="/static/f01a3d3d5bc16d4a1dc91d7bb3c3cffb/f058b/testREsult.png"
+        srcset="/static/f01a3d3d5bc16d4a1dc91d7bb3c3cffb/c26ae/testREsult.png 158w,
+/static/f01a3d3d5bc16d4a1dc91d7bb3c3cffb/6bdcf/testREsult.png 315w,
+/static/f01a3d3d5bc16d4a1dc91d7bb3c3cffb/f058b/testREsult.png 630w,
+/static/f01a3d3d5bc16d4a1dc91d7bb3c3cffb/40601/testREsult.png 945w,
+/static/f01a3d3d5bc16d4a1dc91d7bb3c3cffb/0d40b/testREsult.png 1175w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>A test coverage report is also generated. The report looks like below-</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ae8502b9e3a933b15ebff6d52636c362/610c0/testCoverage.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 38.60759493670886%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAABZElEQVQoz6WSy07DMBBF+/+fwgIktmxgAQIhEEV9pC0pqE/SxHZs17FTp7mMHbWCNZasO2Npju+M3SuyDKvlAgXj+M9q2xbH4xG94SjBYDDAsN+HyBmUUii1BieVUsWcc06xhBDirOEsaFmKqM65CO6tVxZeldBX11j3n5BJAfaRgr2/gZcceZ6DMRYBRVEgy75jfoJy3sXW2g44mwNmWcBcXuBTJJDOwg0nWL/cYKQTCBqFozNj9rFIKRm1aXx0FXbTNHFH4Gbr0VKr4vEOslEw1sEkU2xfbzEux7ElW1UENASqoGkEFeV1XXdAgh8OB3jvO+Bk2sJmOWbpPb7cAkzSvOYpNiKF8RUYtVlTYVWZWBgcBqCnODgNl/0BfqagB2B4zh+wMgvs2A6aZlQ5hcY35LCMgFOh1tTFL4eni85AJcmhNyh4QW8PKtAQBHHUevgG+303uwANgK51ewYGDbAADesHGQ9kdmzrxJYAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Test coverage report "
+        title="Test coverage report "
+        src="/static/ae8502b9e3a933b15ebff6d52636c362/f058b/testCoverage.png"
+        srcset="/static/ae8502b9e3a933b15ebff6d52636c362/c26ae/testCoverage.png 158w,
+/static/ae8502b9e3a933b15ebff6d52636c362/6bdcf/testCoverage.png 315w,
+/static/ae8502b9e3a933b15ebff6d52636c362/f058b/testCoverage.png 630w,
+/static/ae8502b9e3a933b15ebff6d52636c362/40601/testCoverage.png 945w,
+/static/ae8502b9e3a933b15ebff6d52636c362/78612/testCoverage.png 1260w,
+/static/ae8502b9e3a933b15ebff6d52636c362/610c0/testCoverage.png 1295w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>The report shows all my classes in the left column and different coverage
+metrics. For example, the class <code class="language-text">PrintColor</code> has not been tested at all and the
+class <code class="language-text">Checker</code> has 23% test coverage. Jacoco has following test coverage
+metrics-</p>
+<ul>
+<li>Instructions (C0 coverage): Signifies how many byte code instructions have
+been covered.</li>
+<li>Branches (C1 coverage): For <code class="language-text">if</code> and <code class="language-text">switch</code> statement, whether all possible
+branches have been tested or not.</li>
+<li>Cyclomatic complexity: It shows how many tests needed to fully cover a class.</li>
+<li>Lines: It tells how many lines have been tested.</li>
+<li>Methods: Signifies how many methods have been tested.</li>
+<li>Class: Signifies how many classes have been tested.</li>
+</ul>
+<p>You can read more about these metrics <a href="https://www.jacoco.org/jacoco/trunk/doc/counters.html">here</a>.</p>
+<h4>Testing network request</h4>
+<p>I have the following method that makes network request to the given <code class="language-text">url</code> and
+returns an object that stores <code class="language-text">url</code> and the status of request.</p>
+<div class="gatsby-highlight" data-language="java"><pre style="counter-reset: linenumber NaN" class="language-java line-numbers"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">UrlStatus</span> <span class="token function">makeRequest</span><span class="token punctuation">(</span><span class="token class-name">String</span> url<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">UrlStatus</span> status <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+      <span class="token class-name">HttpURLConnection</span> connection <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">HttpURLConnection</span><span class="token punctuation">)</span> <span class="token keyword">new</span> <span class="token function">URL</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">openConnection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      connection<span class="token punctuation">.</span><span class="token function">setInstanceFollowRedirects</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      connection<span class="token punctuation">.</span><span class="token function">setRequestMethod</span><span class="token punctuation">(</span><span class="token string">"HEAD"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      connection<span class="token punctuation">.</span><span class="token function">setConnectTimeout</span><span class="token punctuation">(</span><span class="token number">5000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      status <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UrlStatus</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> connection<span class="token punctuation">.</span><span class="token function">getResponseCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> ex<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">UrlStatus</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> status<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>For testing this method, I can write tests that will make actual network request
+and validate if this method is working as expected. But there is a problem in
+this approach. My test becomes dependent of external resource which is not under
+my control. For example, if there is no internet connection my test will fail.
+If the server is down, my test will fail. Also, network requests are slow. But
+unit tests should be fast. So, the solution is to use a mock network request.
+A mock network request acts as an actual request but it doesn’t go over the
+network.</p>
+<p>There are many approaches to achieve this. There are many frameworks that can
+create mock object for test purpose. As my method is using <code class="language-text">URL</code> and
+<code class="language-text">HttpURLConnection</code> class, I need to create mock object of these classes. Once I
+create mock object, I can configure them to return fake network response. I
+tried to use <a href="https://site.mockito.org/">Mockito</a> and
+<a href="https://github.com/powermock/powermock">PowerMock</a> with JUnit 5. But with
+JUnit 5, neither Mockito nor PowerMock can create mock object of <code class="language-text">URL</code> class. It
+was possible for Junit4 with older version of Mockito and PowerMock. Another way
+to do this testing is to use mock server. That’s the route I took.</p>
+<p>I have used <a href="https://apisimulator.io/">API Simulator</a> to configure a mock server with custom HTTP status
+code. So, when my code is making network request, it was going to this server
+which is running on localhost. The mock server is returning the pre-configured
+status code which my method uses to create the object. Lets see how I configured
+this mock server-</p>
+<p><strong>Adding dependency</strong></p>
+<p>I added the following to my <code class="language-text">pom.xml</code> file.</p>
+<div class="gatsby-highlight" data-language="xml"><pre style="counter-reset: linenumber NaN" class="language-xml line-numbers"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependencies</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>com.apisimulator<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>apisimulator-http-embedded<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>1.7<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependencies</span><span class="token punctuation">></span></span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p><strong>Configuring the mock server</strong></p>
+<p><html><head></head><body><div id="gist106676565" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-mocknetworktest-java" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-java  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tbody><tr>
+        <td id="file-mocknetworktest-java-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-mocknetworktest-java-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">TestChecker</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-mocknetworktest-java-LC2" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-mocknetworktest-java-LC3" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">private</span> <span class="pl-k">static</span> <span class="pl-smi">HttpApiSimulation</span> mockServer <span class="pl-k">=</span> <span class="pl-c1">null</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-mocknetworktest-java-LC4" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-mocknetworktest-java-LC5" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">@BeforeAll</span></td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-mocknetworktest-java-LC6" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">void</span> <span class="pl-en">setUp</span>() {</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-mocknetworktest-java-LC7" class="blob-code blob-code-inner js-file-line">    mockServer <span class="pl-k">=</span> httpApiSimulation(<span class="pl-s"><span class="pl-pds">&quot;</span>mockSim<span class="pl-pds">&quot;</span></span>);</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-mocknetworktest-java-LC8" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">//</span> defining mock response</span></td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-mocknetworktest-java-LC9" class="blob-code blob-code-inner js-file-line">    mockServer<span class="pl-k">.</span>add(</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-mocknetworktest-java-LC10" class="blob-code blob-code-inner js-file-line">        simlet(<span class="pl-s"><span class="pl-pds">&quot;</span>test-google-good<span class="pl-pds">&quot;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-mocknetworktest-java-LC11" class="blob-code blob-code-inner js-file-line">            .when(</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-mocknetworktest-java-LC12" class="blob-code blob-code-inner js-file-line">                httpRequest()</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-mocknetworktest-java-LC13" class="blob-code blob-code-inner js-file-line">                    .whereMethod(<span class="pl-s"><span class="pl-pds">&quot;</span>HEAD<span class="pl-pds">&quot;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-mocknetworktest-java-LC14" class="blob-code blob-code-inner js-file-line">                    .whereUriPath(isEqualTo(<span class="pl-s"><span class="pl-pds">&quot;</span>/return/200<span class="pl-pds">&quot;</span></span>))</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-mocknetworktest-java-LC15" class="blob-code blob-code-inner js-file-line">                    .whereHeader(<span class="pl-s"><span class="pl-pds">&quot;</span>Host<span class="pl-pds">&quot;</span></span>, contains(<span class="pl-s"><span class="pl-pds">&quot;</span>google.com<span class="pl-pds">&quot;</span></span>)))</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-mocknetworktest-java-LC16" class="blob-code blob-code-inner js-file-line">            .then(httpResponse()<span class="pl-k">.</span>withStatus(<span class="pl-c1">200</span>)<span class="pl-k">.</span>withHeader(<span class="pl-s"><span class="pl-pds">&quot;</span>Content-Type<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>application/text<span class="pl-pds">&quot;</span></span>)));</td>
+      </tr>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <tr>
+        <td id="file-mocknetworktest-java-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-mocknetworktest-java-LC35" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="file-mocknetworktest-java-LC36" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="file-mocknetworktest-java-LC37" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">@AfterAll</span></td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="file-mocknetworktest-java-LC38" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">void</span> <span class="pl-en">tearDown</span>() {</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="file-mocknetworktest-java-LC39" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> (mockServer <span class="pl-k">!=</span> <span class="pl-c1">null</span>) {</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="file-mocknetworktest-java-LC40" class="blob-code blob-code-inner js-file-line">      mockServer<span class="pl-k">.</span>stop();</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="file-mocknetworktest-java-LC41" class="blob-code blob-code-inner js-file-line">    }</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="file-mocknetworktest-java-LC42" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/badalsarkar/596211e7691ebf6f6792231ef65fa606/raw/cb8abc1f5ee5d0b740a73ac92ea3748f11601308/MockNetworkTest.java" style="float:right">view raw</a>
+        <a href="https://gist.github.com/badalsarkar/596211e7691ebf6f6792231ef65fa606#file-mocknetworktest-java">MockNetworkTest.java</a>
+        hosted with &#x2764; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div>
+</body></html></p>
+<p>The configuration above is really simple. First I instantiate a mock server at
+line 7. From line 9 - 16, I am adding a mock request and response to the server.
+So, when the server receives a request in the form
+<code class="language-text">https://www.google.com/return/200</code> it will return a status code of <code class="language-text">200</code>. Note,
+that I have annotated my method with <code class="language-text">@BeforeAll</code> annotation. This means that
+this method will be executed before running any of the test cases within this
+class. At the same time I have used <code class="language-text">@AfterAll</code> annotation to stop the server.
+<code class="language-text">@AfterAll</code> annotated method will be executed after all tests within the class
+are run.</p>
+<p>Next, I have used this mock server in the following lines of code.</p>
+<p><html><head></head><body><div id="gist106676565" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-mocknetworktest-java" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-java  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tbody>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <tr>
+        <td id="file-mocknetworktest-java-L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="file-mocknetworktest-java-LC44" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">@Test</span></td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="file-mocknetworktest-java-LC45" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">testGoodUrl</span>() <span class="pl-k">throws</span> <span class="pl-smi">Exception</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="file-mocknetworktest-java-LC46" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">try</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="file-mocknetworktest-java-LC47" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">System</span><span class="pl-k">.</span>setProperty(<span class="pl-s"><span class="pl-pds">&quot;</span>http.proxyHost<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>localhost<span class="pl-pds">&quot;</span></span>);</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="file-mocknetworktest-java-LC48" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">System</span><span class="pl-k">.</span>setProperty(<span class="pl-s"><span class="pl-pds">&quot;</span>http.proxyPort<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>6090<span class="pl-pds">&quot;</span></span>);</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="file-mocknetworktest-java-LC49" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="file-mocknetworktest-java-LC50" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">UrlStatus</span> url <span class="pl-k">=</span> <span class="pl-smi">Checker</span><span class="pl-k">.</span>makeRequest(<span class="pl-s"><span class="pl-pds">&quot;</span>http://www.google.com/return/200<span class="pl-pds">&quot;</span></span>);</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td id="file-mocknetworktest-java-LC51" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">Assertions</span><span class="pl-k">.</span>assertEquals(<span class="pl-c1">200</span>, url<span class="pl-k">.</span>getStatusCode());</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td id="file-mocknetworktest-java-LC52" class="blob-code blob-code-inner js-file-line">    } <span class="pl-k">finally</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td id="file-mocknetworktest-java-LC53" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">System</span><span class="pl-k">.</span>clearProperty(<span class="pl-s"><span class="pl-pds">&quot;</span>http.proxyHost<span class="pl-pds">&quot;</span></span>);</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td id="file-mocknetworktest-java-LC54" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">System</span><span class="pl-k">.</span>clearProperty(<span class="pl-s"><span class="pl-pds">&quot;</span>http.proxyPort<span class="pl-pds">&quot;</span></span>);</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L55" class="blob-num js-line-number" data-line-number="55"></td>
+        <td id="file-mocknetworktest-java-LC55" class="blob-code blob-code-inner js-file-line">    }</td>
+      </tr>
+      <tr>
+        <td id="file-mocknetworktest-java-L56" class="blob-num js-line-number" data-line-number="56"></td>
+        <td id="file-mocknetworktest-java-LC56" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/badalsarkar/596211e7691ebf6f6792231ef65fa606/raw/cb8abc1f5ee5d0b740a73ac92ea3748f11601308/MockNetworkTest.java" style="float:right">view raw</a>
+        <a href="https://gist.github.com/badalsarkar/596211e7691ebf6f6792231ef65fa606#file-mocknetworktest-java">MockNetworkTest.java</a>
+        hosted with &#x2764; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div>
+</body></html></p>
+<p>First, I have used <code class="language-text">system.setProperty()</code> to set the proxy host and proxy port.
+Now, any network request will go to <code class="language-text">localhost</code> running at port <code class="language-text">6090</code>. This is
+where my mock server is running. When the mock server receives a request, it
+will match the request with the one I have specified before and return the
+response associated with it. After that I do my assertion I am
+resetting the <code class="language-text">http.proxyHost</code> and <code class="language-text">http.proxyPort</code> so that from that point on
+network requests are made directly.</p>
+<p>Alright, that’s all with mocking network requests. Next stop is the world of
+Continuous Integration.</p>
+<h3>Continuous Integration with GitHub Actions</h3>
+<p>All these testing are good for local use only. I write code, run tests and if
+all tests pass I push the code to my <code class="language-text">main</code> branch. But what if I forget to run
+the tests? Buggy code can creep into my <code class="language-text">main</code> branch. Oh! I have a solution for
+that. I have a script that will run when any code is committed. I talked about
+that script and some other useful stuff <a href="https://badalsarkar.ca/blog-opensource/opensource/Blink-gets-static-analysis-tools/">here</a>.
+The script runs all the tests when any commit is about to happen and if any
+tests fail, the commit is aborted. Great. But there is a command <code class="language-text">git commit
+--no-verify</code> which allow the commit to go through without running the script. So
+how do I solve this? The answer is with Continuous Integration.</p>
+<p>Continuous Integration(CI) means automating the build and testing of code when
+someone want to add code to the project. There are many CI tools like GitHub
+Actions, TravisCI, CircleCI, TeamCity etc. I have used GitHub Actions for my
+project. I have set it up such that when any code is pushed to my <code class="language-text">main</code> branch
+or when a pull request is created against the <code class="language-text">main</code> branch, all my tests will
+be run, linter will check for bugs and code formatter will ensure that codes are
+formatted correctly. If any of these fails, the code changes will be rejected.</p>
+<p>Lets see how I configured this.</p>
+<img src="/b9c7487c7aadff2e65607321b55d747c/githubActions.gif" alt title="GitHub Actions setup" width="100%" style="display:block; margin-left:auto; margin-right:auto;">
+<br>
+I have used templates already provided by GitHub Actions. I used maven template
+as my project was built with maven.
+Once you follow the above video, you will get a `maven.yml` in `.github/workflows`
+folder. You can customize this file as per your requirement. Read [this](https://docs.github.com/en/free-pro-team@latest/actions/guides) 
+to learn how to customize this script. My script looks like below-
+<p><div id="gist106676565" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-maven-yml" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-yaml  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-maven-yml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-maven-yml-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> This workflow will build a Java project with Maven</span></td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-maven-yml-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven</span></td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-maven-yml-LC3" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-maven-yml-LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">name</span>: <span class="pl-s">Java CI with Maven</span></td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-maven-yml-LC5" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-maven-yml-LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">on</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-maven-yml-LC7" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">push</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-maven-yml-LC8" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">branches</span>: <span class="pl-s">[ master ]</span></td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-maven-yml-LC9" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">pull_request</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-maven-yml-LC10" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">branches</span>: <span class="pl-s">[ master ]</span></td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-maven-yml-LC11" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-maven-yml-LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">jobs</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-maven-yml-LC13" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">build</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-maven-yml-LC14" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-maven-yml-LC15" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">runs-on</span>: <span class="pl-s">ubuntu-latest</span></td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-maven-yml-LC16" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-maven-yml-LC17" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">steps</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-maven-yml-LC18" class="blob-code blob-code-inner js-file-line">    - <span class="pl-ent">uses</span>: <span class="pl-s">actions/checkout@v2</span></td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-maven-yml-LC19" class="blob-code blob-code-inner js-file-line">    - <span class="pl-ent">name</span>: <span class="pl-s">Set up JDK 1.11</span></td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-maven-yml-LC20" class="blob-code blob-code-inner js-file-line">      <span class="pl-ent">uses</span>: <span class="pl-s">actions/setup-java@v1</span></td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-maven-yml-LC21" class="blob-code blob-code-inner js-file-line">      <span class="pl-ent">with</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-maven-yml-LC22" class="blob-code blob-code-inner js-file-line">        <span class="pl-ent">java-version</span>: <span class="pl-c1">1.11</span></td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-maven-yml-LC23" class="blob-code blob-code-inner js-file-line">    - <span class="pl-ent">name</span>: <span class="pl-s">Cache Maven packages</span></td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-maven-yml-LC24" class="blob-code blob-code-inner js-file-line">      <span class="pl-ent">uses</span>: <span class="pl-s">actions/cache@v2</span></td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-maven-yml-LC25" class="blob-code blob-code-inner js-file-line">      <span class="pl-ent">with</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-maven-yml-LC26" class="blob-code blob-code-inner js-file-line">        <span class="pl-ent">path</span>: <span class="pl-s">~/.m2</span></td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-maven-yml-LC27" class="blob-code blob-code-inner js-file-line">        <span class="pl-ent">key</span>: <span class="pl-s">${{ runner.os }}-m2-${{ hashFiles(&#39;**/pom.xml&#39;) }}</span></td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-maven-yml-LC28" class="blob-code blob-code-inner js-file-line">        <span class="pl-ent">restore-keys</span>: <span class="pl-s">${{ runner.os }}-m2  </span></td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-maven-yml-LC29" class="blob-code blob-code-inner js-file-line">    - <span class="pl-ent">name</span>: <span class="pl-s">Build with Maven</span></td>
+      </tr>
+      <tr>
+        <td id="file-maven-yml-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-maven-yml-LC30" class="blob-code blob-code-inner js-file-line">      <span class="pl-ent">run</span>: <span class="pl-s">mvn -B verify --file pom.xml</span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/badalsarkar/596211e7691ebf6f6792231ef65fa606/raw/cb8abc1f5ee5d0b740a73ac92ea3748f11601308/maven.yml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/badalsarkar/596211e7691ebf6f6792231ef65fa606#file-maven-yml">maven.yml</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<ul>
+<li>From line 6-10, I am specifying when to execute this script.</li>
+<li>Line 12 configures all jobs. A workflow consists of one or more jobs. I have
+one job here. This job runs on <code class="language-text">ubuntu-latest</code> operating system.</li>
+<li>Starting line 17, I am specifying the steps that this job will run.</li>
+<li>Line 18 means GitHub Actions will download a copy of my repository</li>
+<li>Line 19 to 22, sets up Java with JDK 11.</li>
+<li>Line 24-28, caches the project dependencies. If this is not setup every time
+the workflow runs it will download all the dependencies. This will slow down the
+workflow. Read more about it <a href="https://docs.github.com/en/free-pro-team@latest/actions/guides/building-and-testing-java-with-maven#caching-dependencies">here</a>.</li>
+<li>Line 29-30, I am running a maven command <code class="language-text">mvn verify</code>. This maven command will
+run all tests, linter and code formatting checker.</li>
+</ul>
+<p>That’s all there is to do with configuring GitHub Actions CI. Now, when I push
+any code to my <code class="language-text">main</code> branch, I get the following report from GitHub Actions-</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4bacd3b1a22a953e95a99c849f212fea/c4842/gitHubActions.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 36.708860759493675%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsSAAALEgHS3X78AAABCklEQVQoz4WRSU7DQBBF+y4ElMkDJrYhCYJbZZ0s4BqcgAXiJCzYICSQYyOkTESxFOLhU79JszBYlPRVra7uV7+61eIjRfI+wzrdogTw/BIhHFyie+yj4/poWh5a9slvyb7T68M7PYctmeJ5dX33hvFtgono6n6B0c2DFAJYXqBhh20HB03rTzVatq4zG6lVusNys8N8vcXmE3h8epXOZ/DCIVzJdGIuV1VtQLjK8xxUlmVgRNFUxqXDELboqOPWAqvSwKIokIsygWrgNIbr9xHIOwaDC3TlXYybOpCpsbnCPghmxEmiHRqXbaf3L7ChR+ZaHJZlCeoHGAtQQHRJIH/UfEz9uN9AnvsCBLcicYm5U5AAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="GitHub Actions"
+        title="GitHub Actions"
+        src="/static/4bacd3b1a22a953e95a99c849f212fea/f058b/gitHubActions.png"
+        srcset="/static/4bacd3b1a22a953e95a99c849f212fea/c26ae/gitHubActions.png 158w,
+/static/4bacd3b1a22a953e95a99c849f212fea/6bdcf/gitHubActions.png 315w,
+/static/4bacd3b1a22a953e95a99c849f212fea/f058b/gitHubActions.png 630w,
+/static/4bacd3b1a22a953e95a99c849f212fea/40601/gitHubActions.png 945w,
+/static/4bacd3b1a22a953e95a99c849f212fea/78612/gitHubActions.png 1260w,
+/static/4bacd3b1a22a953e95a99c849f212fea/c4842/gitHubActions.png 1634w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>Contributing to a partner’s repo</h3>
+<p>Lab 8 required us to contribute to a partners repo by adding tests. I
+contributed to <a href="https://github.com/eunbeek">Eunbee Kim’s</a> project
+<a href="https://github.com/eunbeek/findBrokenGlass">findBrokenGlass</a>. This project is
+also written in Java and built with Maven. I added a test for the following
+method-</p>
+<div class="gatsby-highlight" data-language="java"><pre style="counter-reset: linenumber NaN" class="language-java line-numbers"><code class="language-java">  <span class="token comment">// Method under test</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">JSONObject</span> <span class="token function">convertJavaObjectToJson</span><span class="token punctuation">(</span><span class="token class-name">String</span> url<span class="token punctuation">,</span> <span class="token keyword">int</span> code<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">JSONObject</span> obj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JSONObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    obj<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"url"</span><span class="token punctuation">,</span> url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    obj<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"status"</span><span class="token punctuation">,</span> code<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> obj<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token annotation punctuation">@Test</span>
+  <span class="token keyword">void</span> <span class="token function">testConvertJavaObjectToJson</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">JSONObject</span> actualObject <span class="token operator">=</span> <span class="token class-name">ConvertJavaToJson</span><span class="token punctuation">.</span><span class="token function">convertJavaObjectToJson</span><span class="token punctuation">(</span><span class="token string">"https://google.com"</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">JSONObject</span> expectedObject <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JSONObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    expectedObject<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"url"</span><span class="token punctuation">,</span> <span class="token string">"https://google.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    expectedObject<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"status"</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">assertEquals</span><span class="token punctuation">(</span>expectedObject<span class="token punctuation">,</span> actualObject<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Once the test is passing, I pushed it to his repo. His repository also had CI
+workflow set up. So when my code passed the CI tests, I created a <a href="https://github.com/eunbeek/findBrokenGlass/pull/20">pull request
+in his repo</a>.</p>
+<h3>My learning</h3>
+<p>This lab was very important as I have implemented unit testing and CI to my
+project. Unit testing is super important as this guards against code that can
+break my project. I have used Mocha and Chai for JavaScript before but not
+JUnit. Going forward it will be easier for me to integrate automated testing and
+CI to my future projects.</p></section><hr/></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/2020/release-04-planning/2020-11-25-release-04-planning/">← <!-- -->Release 0.4: Planning</a></li><li><a rel="next" href="/2020/kafka-butterfly/2020-12-04-kafka-in-butterfly/">Implementing Kafka in PayPal/Butterfly<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2021<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.com">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2020/testing-ci-workflow/2020-11-27-testing-and-ci-workflow-blink/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-2966d4d8fea208fd6f8f.js"],"app":["/app-d9cef9e0091e50fa41f4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-1309b621fa9168260594.js"],"component---src-pages-about-js":["/component---src-pages-about-js-72fed644f67fa9821adb.js"],"component---src-pages-index-js":["/component---src-pages-index-js-b90eb0b125ed98c2ef7d.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-7ec76a7fb57839683721.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-6b6ac75080b13940e6a1.js"]};/*]]>*/</script><script src="/polyfill-2966d4d8fea208fd6f8f.js" nomodule=""></script><script src="/webpack-runtime-9809d5255bc490811957.js" async=""></script><script src="/styles-55e82d6ff5158c00b714.js" async=""></script><script src="/framework-de237a875aa45b276a9d.js" async=""></script><script src="/app-d9cef9e0091e50fa41f4.js" async=""></script><script src="/1943edf48358ec375759a10206b57d36c98a5e6d-d3d98b705e8f48692064.js" async=""></script><script src="/93241701166c3169d92c9fdd395837837cace836-d57e403f6b3df0c7cfb5.js" async=""></script><script src="/component---src-templates-blog-post-js-6b6ac75080b13940e6a1.js" async=""></script></body></html>
