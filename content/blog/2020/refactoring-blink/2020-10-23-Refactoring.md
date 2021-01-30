@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Refactoring and Rewritting Git History"
 date:  2020-10-23 14:21:00-0400
 ---
