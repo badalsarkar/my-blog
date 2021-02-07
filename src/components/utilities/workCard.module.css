@@ -1,0 +1,38 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  transition: 0.3s;
+  width: 30%;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.card > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.tag {
+  border: 1px solid green;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 3px;
+  font-size: 0.7rem;
+}

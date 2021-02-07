@@ -33,8 +33,8 @@ const About = ({ location }) => {
             style={{ borderRadius: "50%", width: "250px", height: "250px" }}
           />
           <div>
-            <Link to="/myworks">Resume</Link>
-            <Link to="/resume">My Works</Link>
+            <Link to="/resume">Resume</Link>
+            <Link to="/myworks">My Works</Link>
           </div>
         </div>
         <div id="aboutme">
