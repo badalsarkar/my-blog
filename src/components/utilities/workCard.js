@@ -3,29 +3,32 @@ import React from "react"
 import WorkCardModule from "./workCard.module.css"
 import { FaLink } from "react-icons/fa"
 
-const WorkCard = ({
-  name,
-  description,
-  tools,
-  contribution,
-  contributionLink,
-}) => {
+const WorkCard = ({ name, description, tools, contribution, detailsLink }) => {
   return (
     <div className={WorkCardModule.card}>
+      <Link
+        to={detailsLink}
+        style={{
+          position: "absolute",
+          top: "0",
+          left: "0",
+          height: "100%",
+          width: "100%",
+        }}
+      ></Link>
       <h5>{name}</h5>
-      <span style={{ fontSize: ".96rem" }}>{description}</span>
+      <p style={{ fontSize: ".80rem" }}>{description}</p>
       <div>
         {tools.map(element => {
           return <span className={WorkCardModule.tag}>{element}</span>
         })}
       </div>
 
-      <span style={{ fontSize: ".76rem" }}>
-        <FaLink /> &nbsp;
-        <Link to={contributionLink} target="_blank">
-          Contribution: {contribution}
-        </Link>
-      </span>
+      <div>
+        <span style={{ fontSize: ".76rem" }}>
+          Contributions: {contribution}
+        </span>
+      </div>
     </div>
   )
 }

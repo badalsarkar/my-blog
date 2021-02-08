@@ -29,11 +29,16 @@ const MyWorks = ({ location }) => {
       <SubHeader />
       <div className={worksStyle.container}>
         <div>
-          <h3>Open Source Contribution</h3>
+          <h3 style={{ display: "block", textAlign: "center" }}>
+            Open Source Contribution
+          </h3>
+          <hr />
           <OpenSourceContribution />
         </div>
+        <br />
         <div>
-          <h3>Projects</h3>
+          <h3 style={{ display: "block", textAlign: "center" }}>Projects</h3>
+          <hr />
           <ProjectWork />
         </div>
       </div>

@@ -1,0 +1,33 @@
+.container {
+  max-width: 980px;
+  margin: auto;
+}
+
+.subcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  /* justify-content: space-between; */
+}
+
+.item {
+  width: 48%;
+}
+
+.item > div {
+  padding-left: 20px;
+  font-size: 0.86rem;
+}
+
+#blog {
+  margin-left: 4%;
+}
+
+.tag {
+  border: 1px solid green;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 3px;
+  font-size: 0.7rem;
+}
