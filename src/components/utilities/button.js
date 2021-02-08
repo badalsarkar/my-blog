@@ -5,9 +5,9 @@ const Button = ({ text, style, to }) => {
   let linkStyle = {
     border: "1px solid black",
     borderRadius: "50px",
-    padding: "10px",
+    padding: "5px",
     textDecoration: "none",
-    fontSize: ".86em",
+    fontSize: "12px",
   }
 
   linkStyle = { ...linkStyle, ...style }

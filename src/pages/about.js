@@ -32,10 +32,6 @@ const About = ({ location }) => {
             alt="Test image"
             style={{ borderRadius: "50%", width: "250px", height: "250px" }}
           />
-          <div>
-            <Link to="/resume">Resume</Link>
-            <Link to="/myworks">My Works</Link>
-          </div>
         </div>
         <div id="aboutme">
           <h1>Hello and Welcome !</h1>
