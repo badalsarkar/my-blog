@@ -3,6 +3,7 @@ import React from "react"
 import { Fragment } from "react"
 import Button from "./utilities/button"
 
+
 const SubHeader = () => {
   const style = {
     width: "100%",
@@ -16,7 +17,7 @@ const SubHeader = () => {
     <Fragment>
       <div
         style={{
-          fontSize: ".56rem",
+          fontSize: ".8rem",
           textAlign: "center",
           backgroundColor: "yellow",
         }}

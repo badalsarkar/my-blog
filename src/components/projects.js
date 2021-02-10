@@ -1,24 +1,11 @@
 import React from "react"
 import WorkCard from "./utilities/workCard"
+import {BlinkData} from "../data/projectdata/BlinkData";
+import {AmazingShopData} from "../data/projectdata/AmazingShopData";
+import {AidManagementData} from "../data/projectdata/AidManagementData";
 
-const Projects = [
-  {
-    name: "Blink",
-    description:
-      "A CLI application to detect dead URL and check URL in WayBack machine.",
-    tools: ["Java", "Maven", "JUnit5", "GitHub Actions"],
-  },
-  {
-    name: "Amazing Shop",
-    description: "An E-Commerce application.",
-    tools: ["Java", "Spring", "Maven", "JUnit5"],
-  },
-  {
-    name: "Aid Management Application",
-    description: "A console application that helps manage Aid distribution.",
-    tools: ["C++", "GDB"],
-  },
-]
+const Projects = [BlinkData,AmazingShopData,AidManagementData]
+
 
 const ProjectWork = () => {
   const style = {
@@ -31,11 +18,10 @@ const ProjectWork = () => {
     <div style={style}>
       {Projects.map(item => (
         <WorkCard
-          name={item.name}
-          description={item.description}
-          tools={item.tools}
-          contribution={item.contribution}
-          contributionLink={item.contributionLink}
+          name={item.summary.name}
+          description={item.summary.description}
+          tools={item.summary.tools}
+          detailsLink={item.summary.detailsLink}
         />
       ))}
     </div>

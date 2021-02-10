@@ -11,17 +11,22 @@
   /* justify-content: space-between; */
 }
 
-.item {
-  width: 48%;
-}
+/*.item {*/
+/*  width: 48%;*/
+/*}*/
 
-.item > div {
-  padding-left: 20px;
-  /*font-size: 0.96rem;*/
-}
+/*.item > div {*/
+/*  padding-left: 20px;*/
+/*  !*font-size: 0.96rem;*!*/
+/*}*/
 
 #blog {
-  margin-left: 4%;
+  width:30%;
+  /*margin-left: 4%;*/
+}
+
+#about{
+  width:70%;
 }
 
 .tag {

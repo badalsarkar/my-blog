@@ -7,7 +7,7 @@ const Button = ({ text, style, to }) => {
     borderRadius: "50px",
     padding: "5px",
     textDecoration: "none",
-    fontSize: "12px",
+    // fontSize: "12px",
   }
 
   linkStyle = { ...linkStyle, ...style }
@@ -30,6 +30,7 @@ const Button = ({ text, style, to }) => {
       style={linkStyle}
       onMouseOver={mouseOver}
       onMouseLeave={mouseOut}
+      // activeStyle={{color:"red"}}
     >
       {text}
     </Link>

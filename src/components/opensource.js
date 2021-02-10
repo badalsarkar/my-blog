@@ -21,7 +21,6 @@ const OpenSourceContribution = () => {
           description={item.summary.description}
           tools={item.summary.tools}
           contribution={item.details.completedWork.length}
-          contributionLink={item.summary.contributionLink}
           detailsLink={item.summary.detailsLink}
         />
       ))}

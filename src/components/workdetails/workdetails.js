@@ -65,7 +65,7 @@ const WorkDetails = ({ name, data }) => {
                   <h5>My blog about my work</h5>
                   <div>
                     <ul>
-                      {data.completedWork.map(item => {
+                      {data.blogs.map(item => {
                         return (
                           <li>
                             <Link to={item.link} target="__blank">
